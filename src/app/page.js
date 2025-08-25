@@ -15,10 +15,10 @@ export default function Home() {
         <aside className="w-64 bg-gray-100 border-r min-h-screen p-5">
           <h2 className="text-lg font-semibold mb-5">Discover</h2>
           <ul className="space-y-4">
-            <li><a href="#" className="hover:text-blue-600">🏠 Getting started</a></li>
-            <li><a href="#" className="hover:text-blue-600">⚙️ Installation & Setup</a></li>
-            <li><a href="#" className="hover:text-blue-600">📘 User Guide</a></li>
-            <li><a href="#" className="hover:text-blue-600">💰 Payroll & Finance</a></li>
+            <li><a href="/getting started" className="hover:text-blue-600">🏠 Getting started</a></li>
+            <li><a href="/installation" className="hover:text-blue-600">⚙️ Installation & Setup</a></li>
+            <li><a href="/user guide" className="hover:text-blue-600">📘 User Guide</a></li>
+            <li><a href="/payroll finance" className="hover:text-blue-600">💰 Payroll & Finance</a></li>
           </ul>
         </aside>
 
