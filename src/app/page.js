@@ -23,7 +23,7 @@ export default function Home() {
         </aside>
 
         {/* Main Content */}
-        <div className="flex-1 p-8 max-w-3xl mx-auto">
+        <div className="flex-1 p-8 max-w-3xl mx-auto bg-white">
           <div className="text-sm text-gray-500 mb-3">Home &gt; Documentation</div>
 
           <h2 className="text-2xl font-bold mb-3">
