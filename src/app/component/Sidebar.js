@@ -9,7 +9,7 @@ export default function Sidebar() {
 
   const menus = [
     {
-      name: "HRMS Dashboard",
+      name: "Overview",
       children: [
         { name: "Overview", href: "/hrmsdashboard/overview" },
         { name: "Reports", href: "/hrmsdashboard/reports" },
