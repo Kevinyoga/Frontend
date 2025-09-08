@@ -27,7 +27,7 @@ export default function HomePage() {
 
         {/* Langkah-Langkah */}
         <h2 id="login" className="text-xl font-bold text-blue-800 mb-4">
-          Langkah-Langkah Login
+          Login
         </h2>
         <ol className="list-decimal list-inside space-y-2 text-gray-700">
           <li>
@@ -53,63 +53,8 @@ export default function HomePage() {
         </ol>
 
         {/* Langkah-Langkah */}
-        <h2 id="daftar" className="title-daftar text-xl font-bold text-blue-800 mb-4">
-          Langkah-Langkah Daftar
-        </h2>
-        <ol className="list-decimal list-inside space-y-2 text-gray-700">
-          <li>
-            <span className="font-semibold">Buka Website Duluin</span> Kunjungi situs resmi
-            Duluin HRMS melalui browser:{" "}
-            <a
-              href="https://duluin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
-            >
-              https://duluin.com
-            </a>
-          </li>
-          <li>
-            <span className="font-semibold">Masuk ke Menu Pendaftaran</span> ketik
-            Klik tombol “Daftar / Sign Up” yang ada di pojok kanan atas halaman utama.
-          </li>
-          <li>
-            <span className="font-semibold">Isi Data Perusahaan</span> Masukkan informasi perusahaan, seperti:
-            <ul className="list-disc list-inside ml-5">
-              <li>Nama Perusahaan</li>
-              <li>Email Perusahaan</li>
-              <li>Nomor Telepon</li>
-              <li>Alamat Perusahaan</li>
-            </ul>
-          </li>
-          <li>
-            <span className="font-semibold">Buat Akun Admin</span> Buat akun sebagai Admin HR dengan mengisi:
-            <ul className="list-disc list-inside ml-5">
-              <li>Nama Lengkap</li>
-              <li>Email Aktif</li>
-              <li>Kata Sandi/Password</li>
-              <li>Konfirmasi Kata Sandi/Password</li>
-            </ul>
-          </li>
-          <li>
-            <span className="font-semibold">Login Ke Dashboard</span>
-            <ul className="list-disc list-inside ml-5">
-              <li>Setelah verifikasi berhasil, kembali ke website dan klik Login.</li>
-              <li>Masukkan email dan password yang sudah dibuat.</li>
-            </ul>
-          </li>
-          <li>
-            <span className="font-semibold">Lengkapi Profil & Data Awal</span> Isi detail perusahaan, logo, departemen, dan data karyawan pertama agar sistem HRMS siap digunakan.
-          </li>
-          <li>
-            <span className="font-semibold">Mulai Gunakan HRMS</span> Nikmati berbagai fitur seperti 
-            Payroll, Absensi, Claim & Travel, Employee Management, dan lainnya langsung dari dashboard.
-          </li>
-        </ol>
-
-        {/* Langkah-Langkah */}
         <h2 id="password" className="title-password text-xl font-bold text-blue-800 mb-4">
-          Cara Reset Password (Lupa Password)
+          Reset Password (Lupa Password)
         </h2>
         <ol className="list-decimal list-inside space-y-2 text-gray-700">
           <li>
