@@ -9,7 +9,7 @@ export default function EmployeeManagement() {
       </aside>
 
       {/* Main Content otomatis geser */}
-      <main className="flex-1 p-10 text-left">
+      <main className="flex-1 p-10 text-left text-gray-800">
         {/* Judul */}
         <h1 className="text-2xl md:text-3xl font-bold text-blue-800 mb-6">
           Employee Management
