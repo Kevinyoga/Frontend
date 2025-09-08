@@ -1,58 +1,151 @@
-export default function Home() {
+import Sidebar from "./component/Sidebar";
+import DocSidebar from "./sidebar-home/sidebar1";
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col">
-      {/* Hero Section */}
-      <section className="bg-blue-600 text-white text-center p-10">
-        <h1 className="text-4xl font-bold">Documentation</h1>
-        <div className="mt-6 search-bar">
-          <input type="text" placeholder="Search the docs..." />
+    <div className="flex min-h-screen bg-gradient-to-br from-white to-pink-50">
+      {/* Sidebar kiri biasa */}
+      <aside>
+        <Sidebar />
+      </aside>
+
+      {/* Main Content otomatis geser */}
+      <main className="judul flex-1 p-6 md:p-10">
+        {/* Judul */}
+        <h1 className="text-2xl md:text-3xl font-bold text-blue-800 mb-6">
+          Panduan Penggunaan Halaman Login Duluin HRMS
+        </h1>
+
+        {/* Gambar Preview */}
+        <div className="flex gap-6 mb-10">
+          <img
+            src="/preview.png"
+            alt="Preview Login 1"
+            className="preview-image1 rounded shadow-md"
+          />
         </div>
-      </section>
 
-      {/* Content with Sidebar */}
-      <div className="flex">
-        {/* Sidebar */}
-        <aside className="w-64 bg-gray-100 border-r min-h-screen p-5">
-          <h2 className="text-lg font-semibold mb-5">Discover</h2>
-          <ul className="space-y-4">
-            <li><a href="/getting started" className="hover:text-blue-600">🏠 Getting started</a></li>
-            <li><a href="/installation" className="hover:text-blue-600">⚙️ Installation & Setup</a></li>
-            <li><a href="/user guide" className="hover:text-blue-600">📘 User Guide</a></li>
-            <li><a href="/payroll finance" className="hover:text-blue-600">💰 Payroll & Finance</a></li>
-          </ul>
-        </aside>
+        {/* Langkah-Langkah */}
+        <h2 id="login" className="text-xl font-bold text-blue-800 mb-4">
+          Langkah-Langkah Login
+        </h2>
+        <ol className="list-decimal list-inside space-y-2 text-gray-700">
+          <li>
+            <span className="font-semibold">Masukan Email:</span> ketik email
+            anda pada kolom bertanda "Email".
+          </li>
+          <li>
+            <span className="font-semibold">Masukan Kata Sandi:</span> ketik
+            kata sandi Anda pada kolom bertanda "Password".
+          </li>
+          <li>
+            <span className="font-semibold">Opsi Ingat Saya:</span>  Centang Kotak "Remember me" 
+            Jika Ingin Mengingat Akun Anda Ketika Login Pada perangkat  yang sama di lain waktu
+          </li>
+          <li>
+            <span className="font-semibold">Lupa Kata Sandi:</span> klik "Forgot
+            Password?" untuk memulai proses pemulihan.
+          </li>
+          <li>
+            <span className="font-semibold">Klik Sign In:</span> setelah mengecek
+            ulang email dan kata sandi, tekan tombol "Sign In".
+          </li>
+        </ol>
 
-        {/* Main Content */}
-        <div className="flex-1 p-8 max-w-3xl mx-auto bg-white">
-          <div className="text-sm text-gray-500 mb-3">Home &gt; Documentation</div>
-
-          <h2 className="text-2xl font-bold mb-3">
-            Selamat datang di Dokumentasi Duluin HRMS
-          </h2>
-          <p className="mb-4 leading-relaxed">
-            <strong>Duluin HRMS</strong> hadir untuk membantu perusahaan Anda dalam mengelola
-            sumber daya manusia dengan lebih mudah, cepat, dan efisien. Di sini Anda akan
-            menemukan panduan lengkap mulai dari cara memulai, instalasi, penggunaan fitur,
-            hingga solusi untuk kendala yang mungkin ditemui.
-          </p>
-          <p className="mb-8 leading-relaxed">
-            Dokumentasi ini dirancang agar Anda dapat memaksimalkan semua fitur Duluin HRMS,
-            mulai dari manajemen karyawan, penggajian, hingga integrasi keuangan. 🚀{" "}
-            <a href="#" className="text-blue-600 underline">
-              Mari mulai perjalanan Anda bersama Duluin HRMS!
+        {/* Langkah-Langkah */}
+        <h2 id="daftar" className="title-daftar text-xl font-bold text-blue-800 mb-4">
+          Langkah-Langkah Daftar
+        </h2>
+        <ol className="list-decimal list-inside space-y-2 text-gray-700">
+          <li>
+            <span className="font-semibold">Buka Website Duluin</span> Kunjungi situs resmi
+            Duluin HRMS melalui browser:{" "}
+            <a
+              href="https://duluin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
+              https://duluin.com
             </a>
-          </p>
+          </li>
+          <li>
+            <span className="font-semibold">Masuk ke Menu Pendaftaran</span> ketik
+            Klik tombol “Daftar / Sign Up” yang ada di pojok kanan atas halaman utama.
+          </li>
+          <li>
+            <span className="font-semibold">Isi Data Perusahaan</span> Masukkan informasi perusahaan, seperti:
+            <ul className="list-disc list-inside ml-5">
+              <li>Nama Perusahaan</li>
+              <li>Email Perusahaan</li>
+              <li>Nomor Telepon</li>
+              <li>Alamat Perusahaan</li>
+            </ul>
+          </li>
+          <li>
+            <span className="font-semibold">Buat Akun Admin</span> Buat akun sebagai Admin HR dengan mengisi:
+            <ul className="list-disc list-inside ml-5">
+              <li>Nama Lengkap</li>
+              <li>Email Aktif</li>
+              <li>Kata Sandi/Password</li>
+              <li>Konfirmasi Kata Sandi/Password</li>
+            </ul>
+          </li>
+          <li>
+            <span className="font-semibold">Login Ke Dashboard</span>
+            <ul className="list-disc list-inside ml-5">
+              <li>Setelah verifikasi berhasil, kembali ke website dan klik Login.</li>
+              <li>Masukkan email dan password yang sudah dibuat.</li>
+            </ul>
+          </li>
+          <li>
+            <span className="font-semibold">Lengkapi Profil & Data Awal</span> Isi detail perusahaan, logo, departemen, dan data karyawan pertama agar sistem HRMS siap digunakan.
+          </li>
+          <li>
+            <span className="font-semibold">Mulai Gunakan HRMS</span> Nikmati berbagai fitur seperti 
+            Payroll, Absensi, Claim & Travel, Employee Management, dan lainnya langsung dari dashboard.
+          </li>
+        </ol>
 
-          <h2 className="text-2xl font-bold mb-3">
-            Luncurkan Proyek Perangkat Lunak Anda Seperti Seorang Profesional
-          </h2>
-          <p className="leading-relaxed">
-            Ingin meluncurkan proyek perangkat lunak Anda dan mulai mendapatkan perhatian dari
-            target pengguna? Lihat premium kami! Paket ini menyediakan semua yang Anda butuhkan
-            untuk mempromosikan produk Anda.
-          </p>
-        </div>
-      </div>
+        {/* Langkah-Langkah */}
+        <h2 id="password" className="title-password text-xl font-bold text-blue-800 mb-4">
+          Cara Reset Password (Lupa Password)
+        </h2>
+        <ol className="list-decimal list-inside space-y-2 text-gray-700">
+          <li>
+            <span className="font-semibold">Buka Dashboard Masing-Masing"</span>
+          </li>
+          <li>
+            <span className="font-semibold">Klik "Lupa Password?"</span> ”Di bawah form login, 
+            pilih tombol “Lupa Password”.
+          </li>
+          <li>
+            <span className="font-semibold">Masukan Email Terdaftar</span>  Ketik alamat email 
+            yang kamu gunakan saat mendaftar di Duluin HRMS.
+          </li>
+          <li>
+            <span className="font-semibold">Cek Email Verifikasi</span>
+            <ul className="list-disc list-inside ml-5">
+              <li>Sistem akan mengirimkan link reset password ke email kamu.</li>
+              <li>Buka inbox email dan klik tautan tersebut.</li>
+            </ul>
+          </li>
+          <li>
+            <span className="font-semibold">Buat Password Baru</span>
+            <ul className="list-disc list-inside ml-5">
+              <li>Masukan Sandi Baru</li>
+              <li>Konfirmasi ulang sandi</li>
+              <li>Pastikan Mengikuti Arahan untuk Password yang Kuat</li>
+            </ul>
+          </li>
+          <li>
+            <span className="font-semibold">Login Kembali</span> login 
+            dengan Password yang telah diperbarui.
+          </li>
+        </ol>
+      </main>
+      {/* Sidebar kanan (Daftar Isi) */}
+      <DocSidebar />
     </div>
   );
 }
