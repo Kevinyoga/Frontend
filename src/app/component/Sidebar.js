@@ -11,22 +11,22 @@ export default function Sidebar() {
     {
       name: "Overview",
       children: [
-        { name: "Overview", href: "/hrmsdashboard/overview" },
+        { name: "Overview", href: "/hrmsdashboard" },
       ],
     },
     {
       name: "Getting Started",
       children: [
         { name: "Intro", href: "/" },
-        { name: "Setup", href: "/setup" },
       ],
     },
     {
       name: "Employee Management",
       children: [
-        { name: "Table Data dengan Search & Filter", href: "/employeemanage/searchfilter" },
-        { name: "Tambah Karyawan", href: "/employeemanage/add" },
-        { name: "Import/Export data", href: "/employeemanage/importexport" },
+        { name: "Employee Data Table", href: "/employeemanage/data" },
+        { name: "Employee Overview", href: "/employeemanage/overview" },
+        { name: "Employe Expense", href: "/employeemanage/expense" },
+        { name: "Employe Advance", href: "/employeemanage/advance" },
       ],
     },
     {
@@ -59,7 +59,7 @@ export default function Sidebar() {
     {
       name: "Attendance",
       children: [
-        { name: "Daily Log", href: "/attendance/daily" },
+        { name: "Daily Log", href: "/attendance" },
         { name: "Summary", href: "/attendance/summary" },
       ],
     },

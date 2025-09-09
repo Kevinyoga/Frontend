@@ -1,4 +1,4 @@
-import Sidebar from "../component/Sidebar";
+import Sidebar from "../../component/Sidebar";
 
 export default function EmployeeManagement() {
   return (
@@ -36,7 +36,9 @@ export default function EmployeeManagement() {
           <div>
             <span className="font-semibold">Petunjuk Penggunaan</span>
             <div className="ml-6 mt-1">
-              <p>lengkapi semua data yang bertanda REQUIRED</p>
+              <p>lengkapi semua data yang bertanda <span className="text-blue-600 font-bold">REQUIRED</span></p>
+              <p>Isian informasi dasar seperti nomor karyawan, nama, kontak, tanggal lahir, jenis kelamin, serta status kepegawaian</p>
+              <p>Lanjukan pengisian ke bagian selanjutnya sesuai urutan menu</p>
             </div>
           </div>
         </div>
