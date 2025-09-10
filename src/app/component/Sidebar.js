@@ -23,16 +23,15 @@ export default function Sidebar() {
     {
       name: "Employee Management",
       children: [
-        { name: "Employee Data Table", href: "/employeemanage/data" },
-        { name: "Employee Overview", href: "/employeemanage/overview" },
-        { name: "Employe Expense", href: "/employeemanage/expense" },
-        { name: "Employe Advance", href: "/employeemanage/advance" },
-      ],
-    },
-    {
-      name: "Company",
-      children: [
-        { name: "Overview", href: "/hrmsdashboard/overview" },
+        { name: "Employee List", href: "/employeemanage/data" },
+        { name: "Create New Employee", href: "/employeemanage/new-employee" },
+        { name: "Joining", href: "/employeemanage/joining" },
+        { name: "Address & Contact", href: "/employeemanage/address" },
+        { name: "Attendance", href: "/employeemanage/attendance" },
+        { name: "Salary", href: "/employeemanage/salary" },
+        { name: "Personal", href: "/employeemanage/personal" },
+        { name: "Profile", href: "/employeemanage/profile" },
+        { name: "Exit", href: "/employeemanage/exit" },
       ],
     },
     {
@@ -40,6 +39,19 @@ export default function Sidebar() {
       children: [
         { name: "New Claim", href: "/claimtravel/new" },
         { name: "History", href: "/claimtravel/history" },
+      ],
+    },
+    {
+      name: "Shift & Attendance",
+      children: [
+        { name: "Daily Log", href: "/attendance" },
+        { name: "Summary", href: "/attendance/summary" },
+      ],
+    },
+    {
+      name: "Company",
+      children: [
+        { name: "Overview", href: "/hrmsdashboard/overview" },
       ],
     },
     {
@@ -54,13 +66,6 @@ export default function Sidebar() {
       children: [
         { name: "Salary Slip", href: "/payroll/slip" },
         { name: "Reports", href: "/payroll/reports" },
-      ],
-    },
-    {
-      name: "Attendance",
-      children: [
-        { name: "Daily Log", href: "/attendance" },
-        { name: "Summary", href: "/attendance/summary" },
       ],
     },
   ];

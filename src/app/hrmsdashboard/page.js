@@ -13,7 +13,7 @@ export default function HRMSDashboard() {
       <main className="flex-1 p-10 text-left">
         {/* Judul */}
         <h1 className="hrms text-2xl md:text-3xl font-bold text-blue-800 mb-6">
-          Panduan Penggunaan HRMS Dashboard
+          Overview Penggunaan HRMS Dashboard
         </h1>
 
         {/* Image/gambar */}

@@ -84,7 +84,7 @@ body {
 /* Preview image*/
 .preview-image1 {
   height: auto;
-  width: 550px ;
+  width: 900px ;
 }
 
 .preview-image2 {
@@ -106,5 +106,18 @@ body {
 }
 
 .title-password {
+  padding-top: 20px;
+}
+
+.emergency {
+  padding-top: 20px;
+}
+
+.extra {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.tips {
   padding-top: 20px;
 }

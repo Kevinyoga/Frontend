@@ -19,7 +19,7 @@ export default function EmployeeManagement() {
         <div className="flex gap-6 mb-10">
           <img
             src="preview5.png"
-            alt="Preview dashboard 4"
+            alt="Preview dashboard 5"
             className="preview-image2 rounded shadow-md"
           />
         </div>

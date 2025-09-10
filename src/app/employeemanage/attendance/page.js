@@ -1,4 +1,4 @@
-import Sidebar from "../component/Sidebar";
+import Sidebar from "../../component/Sidebar";
 
 export default function EmployeeManagement() {
   return (
@@ -12,14 +12,14 @@ export default function EmployeeManagement() {
       <main className="flex-1 p-10 text-left text-gray-800">
         {/* Judul */}
         <h1 className="text-2xl md:text-3xl font-bold text-blue-800 mb-6">
-          Employee Management
+          Attendance & Leaves
         </h1>
 
         {/* Gambar Preview */}
         <div className="flex gap-6 mb-10">
           <img
-            src="/preview6.png"
-            alt="Preview dashboard 6"
+            src="/preview8.png"
+            alt="Preview dashboard 8"
             className="preview-image2 rounded shadow-md"
           />
         </div>
@@ -29,35 +29,17 @@ export default function EmployeeManagement() {
           <div>
             <span className="font-semibold">Deskripsi</span>
             <div className="ml-6 mt-1 space-y-1">
-              <p>form ini adalah tampilan awal pengisian data karyawan baru</p>
+              <p>form untuk Mengatur absensi, jadwal kerja, cuti, dan penangung jawab persetujuan.</p>
             </div>
           </div>
 
           <div>
             <span className="font-semibold">Petunjuk Penggunaan</span>
             <div className="ml-6 mt-1">
-              <p>lengkapi semua data yang bertanda REQUIRED</p>
+              <p>Holiday list & default shift:pilih daftar hari libur dan shift utama karyawan.</p>
+              <p>Approvers: atur siapa yang bertanggung jawab mengesahkan absensi, shift dan cuti karyawan.</p>
+              <p>klik "Save changes" setelah data lengkap</p>
             </div>
-          </div>
-        </div>
-
-        {/* Status Karyawan */}
-        <div className="mt-8">
-          <span className="font-semibold">Status Karyawan:</span>
-          <div className="ml-6 mt-1">
-            <p>Tampilkan Aktif / Non-aktif.</p>
-            <p>Gunakan filter status untuk cepat melihat.</p>
-          </div>
-        </div>
-
-        {/* Tips */}
-        <div className="mt-8">
-          <span className="font-semibold">Tips:</span>
-          <div className="ml-6 mt-1 space-y-1">
-            <p>Gunakan search & filter untuk efisiensi.</p>
-            <p>Pastikan data lengkap sebelum simpan.</p>
-            <p>Gunakan import untuk banyak karyawan sekaligus.</p>
-            <p>Cek status approval jika ada.</p>
           </div>
         </div>
       </main>
