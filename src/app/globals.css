@@ -119,5 +119,9 @@ body {
 }
 
 .tips {
+  padding-top: 40px;
+}
+
+.indicator {
   padding-top: 20px;
 }

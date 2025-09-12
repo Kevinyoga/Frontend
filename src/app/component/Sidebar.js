@@ -11,13 +11,13 @@ export default function Sidebar() {
     {
       name: "Overview",
       children: [
-        { name: "Overview", href: "/hrmsdashboard" },
+        { name: "Overview", href: "/" },
       ],
     },
     {
       name: "Getting Started",
       children: [
-        { name: "Intro", href: "/" },
+        { name: "Intro", href: "/gettingstarted" },
       ],
     },
     {
@@ -37,8 +37,9 @@ export default function Sidebar() {
     {
       name: "Claims & Travel",
       children: [
-        { name: "New Claim", href: "/claimtravel/new" },
-        { name: "History", href: "/claimtravel/history" },
+        { name: "Employee Expense", href: "/claimtravel/expense" },
+        { name: "History", href: "/claimtravel/addexpense" },
+        { name: "Incooming", href: "/claimtravel/" },
       ],
     },
     {

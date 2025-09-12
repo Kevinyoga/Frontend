@@ -1,10 +1,12 @@
 "use client";
 import { useEffect, useState } from "react";
 
-export default function DocSidebar() {
+export default function ExpenseSidebar() {
   const sections = [
-    { id: "login", title: "Langkah-Langkah Login" },
-    { id: "password", title: "Cara Reset Password" },
+    { id: "tujuan", title: "Tujuan halaman" },
+    { id: "tabel", title: "Tabel Data Pengajuan" },
+    { id: "indicator", title: "Indikator Status" },
+    { id: "tips", title: "Tips" },
   ];
 
   const [activeId, setActiveId] = useState(null);
@@ -19,7 +21,7 @@ export default function DocSidebar() {
         });
       },
       {
-        rootMargin: "-60% 0px -60% 0px",
+        rootMargin: "-70% 0px -70% 0px", 
         threshold: 0,
       }
     );
@@ -33,11 +35,9 @@ export default function DocSidebar() {
   }, [sections]);
 
   return (
-    <aside className="w-64 bg-gray-50 shadow flex flex-col sticky top-0 h-screen overflow-y-auto">
-      <div className="p-4 border-gray-200">
-        <h3 className="text-lg font-bold text-gray-800">Daftar Isi</h3>
-      </div>
-      <nav className="flex flex-col p-4 space-y-2">
+    <aside className="w-64 bg-gray-50 shadow p-4 h-screen sticky top-0 flex flex-col">
+      <h3 className="text-lg font-bold text-gray-800 mb-4">Daftar Isi</h3>
+      <nav className="flex flex-col space-y-2 overflow-y-auto">
         {sections.map((s) => (
           <a
             key={s.id}

@@ -22,7 +22,7 @@ export default function ExitSidebar() {
         });
       },
       {
-        rootMargin: "-30% 0px -30% 0px", // section aktif pas agak ke tengah
+        rootMargin: "-45% 0px -45% 0px", // section aktif pas agak ke tengah
         threshold: 0.3,
       }
     );
@@ -36,9 +36,9 @@ export default function ExitSidebar() {
   }, [sections]);
 
   return (
-    <aside className="w-64 bg-gray-50 shadow p-4 rounded-xl h-fit sticky top-4 self-start">
+    <aside className="w-64 bg-gray-50 shadow p-4 h-screen sticky top-0 flex flex-col">
       <h3 className="text-lg font-bold text-gray-800 mb-4">Daftar Isi</h3>
-      <nav className="flex flex-col space-y-2">
+      <nav className="flex flex-col space-y-2 overflow-y-auto">
         {sections.map((s) => (
           <a
             key={s.id}
