@@ -1,3 +1,4 @@
+import JoiningEmployee from "@/app/component/joining-employee/page";
 import Sidebar from "../../component/Sidebar";
 
 export default function EmployeeManagement() {
@@ -27,14 +28,14 @@ export default function EmployeeManagement() {
         {/* Main Content */}
         <div className="space-y-6 text-gray-700">
           <div>
-            <span className="font-semibold">Deskripsi</span>
+            <span id="desc" className="font-semibold">Deskripsi</span>
             <div className="ml-6 mt-1 space-y-1">
               <p>form ini digunakan untuk mengisi informasi karyawan baru terkait Waktu mulai kerja,kontrak,dan masa pension.</p>
             </div>
           </div>
 
           <div>
-            <span className="font-semibold">Petunjuk Pengisian</span>
+            <span id="petunjuk" className="font-semibold">Petunjuk Pengisian</span>
             <div className="ml-6 mt-1">
               <p>confirmation, exit notice, offer,contract End,Date of Retirement:</p>
               <p>Masukan tanggal sesuai format yang di minta(dd/mm/yyyy).</p>
@@ -43,6 +44,9 @@ export default function EmployeeManagement() {
           </div>
         </div>
       </main>
+      <aside className="h-screen sticky top-0">
+        <JoiningEmployee />
+      </aside>
     </div>
   );
 }

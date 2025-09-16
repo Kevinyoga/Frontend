@@ -1,4 +1,4 @@
-import ExitSidebar from "@/app/sidebar-exit/sidebar2";
+import ExitSidebar from "@/app/component/sidebar-exit/sidebar2";
 import Sidebar from "../../component/Sidebar";
 
 export default function EmployeeManagement() {

@@ -1,3 +1,4 @@
+import EmployeeList from "@/app/component/sidebar-emplist/page";
 import Sidebar from "../../component/Sidebar";
 
 export default function EmployeeManagement() {
@@ -27,20 +28,23 @@ export default function EmployeeManagement() {
         {/* Main Content */}
         <div className="space-y-6 text-gray-700">
           <div>
-            <span className="font-semibold">Deskripsi</span>
+            <span id="desc" className="font-semibold">Deskripsi</span>
             <div className="ml-6 mt-1 space-y-1">
               <p>Halaman ini meanampilkan seluruh data karyawan. dilengkapi fitur pencarian,filter,ekspor,data,dan tombol tambah karywan baru.</p>
             </div>
           </div>
 
           <div>
-            <span className="font-semibold">Menu Utama:</span>
+            <span id="list" className="font-semibold">Menu Utama:</span>
             <div className="ml-6 mt-1">
               <p>Gunakan kolom SEARCH untuk pencarian karyawanImport/export Data untuk mengelola data masal klik ADD NEW EMPLOYEE untuk menambah karyawan baru. Status aktif karyawan ditampikan pada kolom paling kanan.</p>
             </div>
           </div>
         </div>
       </main>
+      <aside className="h-screen sticky top-0">
+        <EmployeeList />
+      </aside>
     </div>
   );
 }

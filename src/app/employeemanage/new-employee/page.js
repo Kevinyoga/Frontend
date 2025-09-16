@@ -1,4 +1,5 @@
 import Sidebar from "../../component/Sidebar";
+import NewEmployee from "@/app/component/new-employee/page";
 
 export default function EmployeeManagement() {
   return (
@@ -27,14 +28,14 @@ export default function EmployeeManagement() {
         {/* Main Content */}
         <div className="space-y-6 text-gray-700">
           <div>
-            <span className="font-semibold">Deskripsi</span>
+            <span id="desc" className="font-semibold">Deskripsi</span>
             <div className="ml-6 mt-1 space-y-1">
               <p>form ini adalah tampilan awal pengisian data karyawan baru</p>
             </div>
           </div>
 
           <div>
-            <span className="font-semibold">Petunjuk Penggunaan</span>
+            <span id="petunjuk" className="font-semibold">Petunjuk Penggunaan</span>
             <div className="ml-6 mt-1">
               <p>lengkapi semua data yang bertanda <span className="text-blue-600 font-bold">REQUIRED</span></p>
               <p>Isian informasi dasar seperti nomor karyawan, nama, kontak, tanggal lahir, jenis kelamin, serta status kepegawaian</p>
@@ -43,6 +44,9 @@ export default function EmployeeManagement() {
           </div>
         </div>
       </main>
+      <aside className="h-screen sticky top-0">
+        <NewEmployee />
+      </aside>
     </div>
   );
 }

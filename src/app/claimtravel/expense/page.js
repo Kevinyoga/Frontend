@@ -1,4 +1,4 @@
-import ExpenseSidebar from "@/app/sidebar-expense/sidebar3";
+import ExpenseSidebar from "@/app/component/sidebar-expense/sidebar3";
 import Sidebar from "../../component/Sidebar";
 
 export default function EmployeeManagement() {

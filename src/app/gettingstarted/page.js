@@ -1,5 +1,5 @@
 import Sidebar from "../component/Sidebar";
-import DocSidebar from "../sidebar-home/sidebar1";
+import DocSidebar from "../component/sidebar-home/sidebar1";
 
 export default function HomePage() {
   return (

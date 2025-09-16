@@ -38,8 +38,9 @@ export default function Sidebar() {
       name: "Claims & Travel",
       children: [
         { name: "Employee Expense", href: "/claimtravel/expense" },
-        { name: "History", href: "/claimtravel/addexpense" },
-        { name: "Incooming", href: "/claimtravel/" },
+        { name: "Create Expense", href: "/claimtravel/addexpense" },
+        { name: "Employee Advance", href: "/claimtravel/advance" },
+        { name: "Add New Advance", href: "/claimtravel/addadvance" },
       ],
     },
     {

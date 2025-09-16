@@ -1,3 +1,4 @@
+import AttendanceSidebar from "@/app/component/attendance/page";
 import Sidebar from "../../component/Sidebar";
 
 export default function EmployeeManagement() {
@@ -27,14 +28,14 @@ export default function EmployeeManagement() {
         {/* Main Content */}
         <div className="space-y-6 text-gray-700">
           <div>
-            <span className="font-semibold">Deskripsi</span>
+            <span id="desc" className="font-semibold">Deskripsi</span>
             <div className="ml-6 mt-1 space-y-1">
               <p>form untuk Mengatur absensi, jadwal kerja, cuti, dan penangung jawab persetujuan.</p>
             </div>
           </div>
 
           <div>
-            <span className="font-semibold">Petunjuk Penggunaan</span>
+            <span id="petunjuk" className="font-semibold">Petunjuk Penggunaan</span>
             <div className="ml-6 mt-1">
               <p>Holiday list & default shift:pilih daftar hari libur dan shift utama karyawan.</p>
               <p>Approvers: atur siapa yang bertanggung jawab mengesahkan absensi, shift dan cuti karyawan.</p>
@@ -43,6 +44,9 @@ export default function EmployeeManagement() {
           </div>
         </div>
       </main>
+      <aside className="h-screen sticky top-0">
+        <AttendanceSidebar />
+      </aside>
     </div>
   );
 }
