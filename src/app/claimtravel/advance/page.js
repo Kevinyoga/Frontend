@@ -1,3 +1,4 @@
+import AdvSidebar from "@/app/component/advance/page";
 import Sidebar from "../../component/Sidebar";
 
 export default function HomePage() {
@@ -33,7 +34,7 @@ export default function HomePage() {
         </p>
 
         {/* Langkah-Langkah */}
-        <div className="tabel">
+        <div id="tabel" className="tabel">
             <div className="ml-6 mt-2 overflow-x-auto">
                 <table className="min-w-15 border border-gray-300 text-sm">
                     <tbody>
@@ -103,7 +104,7 @@ export default function HomePage() {
                     </tr>
                     </tbody>
                 </table>
-                <div id="indicator" className="indicator">
+                <div id="catatan" className="indicator">
                     <span className="font-semibold">Catatan Tambahan</span>
                     <div className="ml-6 mt-1 space-y-1">
                     <p>Reff ID unik membantu pelacakan dan dokumentasi</p>
