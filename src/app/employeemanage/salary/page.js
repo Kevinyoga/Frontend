@@ -1,3 +1,4 @@
+import SalarySidebar from "@/app/component/salary/page";
 import Sidebar from "../../component/Sidebar";
 
 export default function EmployeeManagement() {
@@ -27,14 +28,14 @@ export default function EmployeeManagement() {
         {/* Main Content */}
         <div className="space-y-6 text-gray-700">
           <div>
-            <span className="font-semibold">Deskripsi</span>
+            <span id="desc" className="font-semibold">Deskripsi</span>
             <div className="ml-6 mt-1 space-y-1">
               <p>form ini digunakan untuk mengelola dan mencatat informasi gaji karyawan baru di dalam sistem.</p>
             </div>
           </div>
 
           <div>
-            <span className="font-semibold">Petunjuk Pengisian</span>
+            <span id="petunjuk" className="font-semibold">Petunjuk Pengisian</span>
             <div className="ml-6 mt-1">
               <p>salary (CTC):masukan total gaji karyawan (cost to company).</p>
               <p>salary currency dan salary mode:pilih mata uang dam kode pembayaran gaji.</p>
@@ -45,6 +46,9 @@ export default function EmployeeManagement() {
           </div>
         </div>
       </main>
+      <aside className="h-screen sticky top-0">
+        <SalarySidebar />
+      </aside>
     </div>
   );
 }

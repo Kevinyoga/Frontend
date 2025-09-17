@@ -1,3 +1,4 @@
+import ProfileSidebar from "@/app/component/profile-sidebar/page";
 import Sidebar from "../../component/Sidebar";
 
 export default function EmployeeManagement() {
@@ -27,14 +28,14 @@ export default function EmployeeManagement() {
         {/* Main Content */}
         <div className="space-y-6 text-gray-700">
           <div>
-            <span className="font-semibold">Educational Qualification</span>
+            <span id="desc" className="font-semibold">Educational Qualification</span>
             <div className="ml-6 mt-1 space-y-1">
               <p>bagian ini digunakan untuk menginput riwayat pendidikan karyawan, kolom terdiri dari:</p>
             </div>
           </div>
 
           <div>
-            <span className="font-semibold">Petunjuk Pengisian</span>
+            <span id="petunjuk" className="font-semibold">Petunjuk Pengisian</span>
             <div className="ml-6 mt-2 space-y-2">
               <div className="flex">
                 <span className="w-40 font-medium">No.</span>
@@ -70,6 +71,9 @@ export default function EmployeeManagement() {
           </div>
         </div>
       </main>
+      <aside className="h-screen sticky top-0">
+        <ProfileSidebar />
+      </aside>
     </div>
   );
 }

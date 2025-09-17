@@ -33,7 +33,7 @@ export default function EmployeeManagement() {
           {/* Main Content */}
           <div className="space-y-6 text-gray-700">
             <div>
-              <span className="font-semibold">Bagian Exit</span>
+              <span id="exit" className="font-semibold">Bagian Exit</span>
               <div className="ml-6 mt-1 space-y-1">
                 <p>
                   Menu ini digunakan mengelola Data Karyawan yang akan

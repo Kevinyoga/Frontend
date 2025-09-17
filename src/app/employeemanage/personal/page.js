@@ -1,3 +1,4 @@
+import PersonalSidebar from "@/app/component/personal-sidebar/page";
 import Sidebar from "../../component/Sidebar";
 
 export default function EmployeeManagement() {
@@ -27,7 +28,7 @@ export default function EmployeeManagement() {
         {/* Main Content */}
         <div className="space-y-6 text-gray-700">
           <div>
-            <span className="font-semibold">Deskripsi</span>
+            <span id="desc" className="font-semibold">Deskripsi</span>
             <div className="ml-6 mt-1 space-y-1">
               <p>form untuk melengkapi data personal karyawan,termasuk foto dan informasi medis dasar.</p>
             </div>
@@ -48,7 +49,7 @@ export default function EmployeeManagement() {
         {/* Main Content */}
         <div className="space-y-6 text-gray-700">
           <div>
-            <h2 className="emergency text-xl font-bold text-blue-800 mb-4">
+            <h2 id="passport" className="emergency text-xl font-bold text-blue-800 mb-4">
                 Passport details
             </h2>
             <span className="font-semibold">Deskripsi</span>
@@ -66,6 +67,9 @@ export default function EmployeeManagement() {
           </div>
         </div>
       </main>
+      <aside className="h-screen sticky top-0">
+        <PersonalSidebar />
+      </aside>
     </div>
   );
 }
