@@ -24,8 +24,8 @@ export default function EmployeeManagement() {
           {/* Gambar Preview */}
           <div className="flex gap-6 mb-10">
             <img
-              src="/preview11.png"
-              alt="Preview dashboard 11"
+              src="/preview13.png"
+              alt="Preview dashboard 13"
               className="preview-image2 rounded shadow-md"
             />
           </div>

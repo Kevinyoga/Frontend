@@ -19,8 +19,8 @@ export default function HomePage() {
         {/* Gambar Preview */}
         <div className="flex gap-6 mb-10">
           <img
-            src="/preview.png"
-            alt="Preview Login 1"
+            src="/preview15.png"
+            alt="Preview Login 15"
             className="preview-image1 rounded shadow-md"
           />
         </div>
@@ -59,7 +59,7 @@ export default function HomePage() {
                         Date
                         </td>
                         <td className="px-3 py-2">
-                        JTanggal pengajuan uang muka.
+                        Tanggal pengajuan uang muka.
                         </td>
                     </tr>
                     <tr className="border-b">

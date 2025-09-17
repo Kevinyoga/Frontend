@@ -41,6 +41,7 @@ export default function Sidebar() {
         { name: "Create Expense", href: "/claimtravel/addexpense" },
         { name: "Employee Advance", href: "/claimtravel/advance" },
         { name: "Add New Advance", href: "/claimtravel/addadvance" },
+        { name: "Expense Claim Type", href: "/claimtravel/expense-type" },
       ],
     },
     {

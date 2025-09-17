@@ -18,8 +18,8 @@ export default function HomePage() {
         {/* Gambar Preview */}
         <div className="flex gap-6 mb-10">
           <img
-            src="/preview.png"
-            alt="Preview Login 1"
+            src="/preview14.png"
+            alt="Preview Login 14"
             className="preview-image1 rounded shadow-md"
           />
         </div>

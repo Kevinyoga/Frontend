@@ -1,3 +1,4 @@
+import AddSidebar from "@/app/component/add-advance/page";
 import Sidebar from "../../component/Sidebar";
 
 export default function HomePage() {
@@ -12,14 +13,14 @@ export default function HomePage() {
       <main className="judul flex-1 p-6 md:p-10">
         {/* Judul */}
         <h1 className="text-2xl md:text-3xl font-bold text-blue-800 mb-6">
-          Panduan Penggunaan Halaman Employee Advance
+          Create Employee Advance
         </h1>
 
         {/* Gambar Preview */}
         <div className="flex gap-6 mb-10">
           <img
-            src="/preview.png"
-            alt="Preview Login 1"
+            src="/preview16.png"
+            alt="Preview Login 16"
             className="preview-image1 rounded shadow-md"
           />
         </div>
@@ -29,52 +30,28 @@ export default function HomePage() {
           Tujuan Halaman
         </h2>
         <p>
-          Halaman ini digunakan untuk menampilkan daftar pengajuan uang muka (advance) oleh karyawan. uang muka ini biasnya digunakan untuk kegiatan yang akan dilakukan seperti perjalanan dinas, pembelian barang operasional, dll.
+          Form ini digunakan untuk mengajukan permintaan uang muka (advance) oleh karyawan untuk keperluan tertentu sebelum biaya tersebut terjadi.
         </p>
 
         {/* Langkah-Langkah */}
-        <div className="tabel">
+        <div id="tabel" className="tabel">
             <div className="ml-6 mt-2 overflow-x-auto">
                 <table className="min-w-15 border border-gray-300 text-sm">
                     <tbody>
                     <tr className="border-b">
                         <td className="w-56 font-medium px-3 py-2">
-                        No
-                        </td>
-                        <td className="px-3 py-2">
-                        Nomor urut entri dalam daftar 
-                        </td>
-                    </tr>
-                    <tr className="border-b">
-                        <td className="font-medium px-3 py-2">
-                        Reff ID
-                        </td>
-                        <td className="px-3 py-2">
-                        Kode unik untuk identifikasi pengajuan. Contoh: <span className="text-green-600">PDD1-ADV-233150</span>.
-                        </td>
-                    </tr>
-                    <tr className="border-b">
-                        <td className="font-medium px-3 py-2">
-                        Date
-                        </td>
-                        <td className="px-3 py-2">
-                        JTanggal pengajuan uang muka.
-                        </td>
-                    </tr>
-                    <tr className="border-b">
-                        <td className="font-medium px-3 py-2">
-                        Advance Purpose
-                        </td>
-                        <td className="px-3 py-2">
-                        Tujuan atau alasan permintaan uang muka.
-                        </td>
-                    </tr>
-                    <tr className="border-b">
-                        <td className="font-medium px-3 py-2">
                         Employee Name
                         </td>
                         <td className="px-3 py-2">
-                        Nama karyawan yang mengajukan
+                        Dropdown untuk memilih nama karyawan yang mengajukan 
+                        </td>
+                    </tr>
+                    <tr className="border-b">
+                        <td className="font-medium px-3 py-2">
+                        Claim Approver
+                        </td>
+                        <td className="px-3 py-2">
+                        Nama atasan atau pihak yang akan menyetujui permintaan advance ini.
                         </td>
                     </tr>
                     <tr className="border-b">
@@ -82,15 +59,7 @@ export default function HomePage() {
                         Amount
                         </td>
                         <td className="px-3 py-2">
-                        Jumlah uang yang diminta
-                        </td>
-                    </tr>
-                    <tr className="border-b">
-                        <td className="font-medium px-3 py-2">
-                        Approver Name
-                        </td>
-                        <td className="px-3 py-2">
-                        Nama atasan yang menyetujui atau menolak pengajuan.
+                        Jumlah uang muka yang diminta, wajib di isi dan hanya angka.
                         </td>
                     </tr>
                     <tr className="border-b">
@@ -98,24 +67,69 @@ export default function HomePage() {
                         Status
                         </td>
                         <td className="px-3 py-2">
-                        Status Pengajuan (Approved, Rejected, Submitted)
+                        Status pengajuan: Draft, Submitted, Approved, Rejected, dll.
+                        </td>
+                    </tr>
+                    <tr className="border-b">
+                        <td className="font-medium px-3 py-2">
+                        Purpose
+                        </td>
+                        <td className="px-3 py-2">
+                        Alasan atau tujuan dari permintaan uang muka (misal: perjalanan dinas atau pembelian barang)
+                        </td>
+                    </tr>
+                    <tr className="border-b">
+                        <td className="font-medium px-3 py-2">
+                        Repay Unclaimed From Salary
+                        </td>
+                        <td className="px-3 py-2">
+                        Opsi radio untuk menyatakan apakah sisa uang muka yang tidak digunakan akan dipotong dari gaji:
                         </td>
                     </tr>
                     </tbody>
                 </table>
+                <div id="catatan" className="indicator">
+                    <div className="ml-6 mt-2 space-y-2">
+                      <div className="flex">
+                        <span className="w-40 font-medium">Yes</span>
+                        <span>Akan di potong otomatis dari gaji</span>
+                      </div>
+                      <div className="flex">
+                        <span className="w-40 font-medium">No</span>
+                        <span>Tidak di potong dari gaji</span>
+                      </div>
+                      <div className="flex">
+                        <span className="w-40 font-medium">payment Menthod:</span>
+                        <span>pilih metode pembayaran uang muka, misalnya:</span>
+                      </div>
+                      <div className="flex">
+                        <span className="w-40 font-medium">Transfer Bank</span>
+                      </div>
+                      <div className="flex">
+                        <span className="w-40 font-medium">Tunai</span>
+                      </div>
+                      <div className="flex">
+                        <span className="w-40 font-medium">E-Wallet,dll.</span>
+                      </div>
+                      <div className="ml-6 mt-1 text-color-black space-y-1">
+                      <p>Attach File : Upload file pendukung,seperti surat permohonan,estimasi biaya,dsb</p>
+                      </div>
+                    </div>
+                </div>
                 <div id="indicator" className="indicator">
-                    <span className="font-semibold">Catatan Tambahan</span>
+                    <span className="font-semibold">Validasi & Tips Implementasi</span>
                     <div className="ml-6 mt-1 space-y-1">
-                    <p>Reff ID unik membantu pelacakan dan dokumentasi</p>
-                    <p>Pastikan setiap pengajuan memiliki deskripsi/tujuan yang jelas agar mudah diverifikasi oleh approver.</p>
-                    <p>status bisa berubah setelah proses persetujuan oleh atasan atau finance.</p>
+                    <p>Field dengan label Required wajib diisi sebelum form bisa di simpan</p>
+                    <p>Gunakan dropdown atau autocomplete untuk kolom “Employee Name” dan “Claim Approvee”</p>
+                    <p>Tambahkan notifikasi error inline jika ad field kosong saat pengguna klik “save changes”</p>
+                    <p>idealnya ,sistem akan otomatis membuat Reff ID saat data disimpan untuk tracking</p>
                     </div>
                 </div>
             </div>
         </div>
       </main>
       <aside className="h-screen sticky top-0">
-        <AdvSidebar />
+        <AddSidebar />
       </aside>
     </div>
   );
