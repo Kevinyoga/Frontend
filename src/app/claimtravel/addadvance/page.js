@@ -26,7 +26,7 @@ export default function HomePage() {
         </div>
 
         {/* Langkah-Langkah */}
-        <h2 id="login" className="text-xl font-bold mb-4">
+        <h2 className="text-xl font-bold mb-4">
           Tujuan Halaman
         </h2>
         <p>

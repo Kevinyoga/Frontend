@@ -1,5 +1,5 @@
-import AddSidebar from "@/app/component/add-advance/page";
 import Sidebar from "../../component/Sidebar";
+import ClaimTypeSidebar from "@/app/component/expense-sidebar/page";
 
 export default function HomePage() {
   return (
@@ -26,7 +26,7 @@ export default function HomePage() {
         </div>
 
         {/* Langkah-Langkah */}
-        <h2 id="login" className="text-xl font-bold mb-4">
+        <h2 id="tabel" className="text-xl font-bold mb-4">
           Tujuan
         </h2>
         <p>
@@ -34,7 +34,7 @@ export default function HomePage() {
         </p>
 
         {/* Langkah-Langkah */}
-        <div id="tabel" className="tabel">
+        <div className="tabel">
             <div className="ml-6 mt-2 overflow-x-auto">
                 <table className="min-w-15 border border-gray-300 text-sm">
                     <tbody>
@@ -88,7 +88,7 @@ export default function HomePage() {
         </div>
       </main>
       <aside className="h-screen sticky top-0">
-        <AddSidebar />
+        <ClaimTypeSidebar />
       </aside>
     </div>
   );
