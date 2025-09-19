@@ -3,10 +3,10 @@ import { useEffect, useState } from "react";
 
 export default function AddTravelSidebar() {
   const sections = [
-    { id: "page", title: "page 1" },
-    { id: "page2", title: "Page 2" },
-    { id: "page3", title: "Page 3" },
-    { id: "page4", title: "Page 4" },
+    { id: "page", title: "Employee Details" },
+    { id: "page2", title: "Travel Details" },
+    { id: "page3", title: "Tambah Rute" },
+    { id: "page4", title: "Estimasi Pengeluaran" },
   ];
 
   const [activeId, setActiveId] = useState(null);

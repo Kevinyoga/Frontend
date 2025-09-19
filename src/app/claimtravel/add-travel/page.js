@@ -104,7 +104,7 @@ export default function HomePage() {
             />
         </div>
 
-        <div page="page4" className="indicator">
+        <div id="page4" className="indicator">
             <span className="font-semibold">Tambah Biaya / Estimasi Pengeluaran</span>
             <div className="ml-6 mt-1 space-y-1">
             <h4>Komponen utama:</h4>
