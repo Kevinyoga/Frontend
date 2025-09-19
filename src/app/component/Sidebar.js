@@ -50,8 +50,9 @@ export default function Sidebar() {
     {
       name: "Shift & Attendance",
       children: [
-        { name: "Daily Log", href: "/attendance" },
-        { name: "Summary", href: "/attendance/summary" },
+        { name: "Shift Attendance Management", href: "/shift-attendance/shift-attendance-management" },
+        { name: "Attendance Dashboard", href: "/shift-attendance/attendance-dashboard" },
+        { name: "Add Attendance", href: "/shift-attendance/add-attendance" },
       ],
     },
     {
