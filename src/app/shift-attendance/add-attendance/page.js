@@ -1,4 +1,3 @@
-import AttendanceDashboard from "@/app/component/attendance-dashboard/page";
 import Sidebar from "../../component/Sidebar";
 import AddAttendance from "@/app/component/add-attendance/page";
 
@@ -96,7 +95,7 @@ export default function HomePage() {
         </div>
 
         <div id="tips" className="indicator">
-            <span className="font-semibold">Tips Validasi</span>
+          <h2>Tips Validasi</h2>
             <div className="ml-6 mt-1 space-y-1">
             <p>pastikan semua field bertanda “Required” diisi sebelum klik Save Changes</p>
             <p>jika Checkout Time belum diketahui(misal check-in saat ini),boleh dikosonglan terlebih dahulu.</p>
