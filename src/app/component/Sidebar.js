@@ -56,6 +56,8 @@ export default function Sidebar() {
         { name: "Attendance Activity", href: "/shift-attendance/attendance-activity" },
         { name: "Attendance Report", href: "/shift-attendance/attendance-report" },
         { name: "Activity Report", href: "/shift-attendance/activity-report" },
+        { name: "Shift Report", href: "/shift-attendance/shift-report" },
+        { name: "Attendance Summary", href: "/shift-attendance/attendance-summary" },
       ],
     },
     {

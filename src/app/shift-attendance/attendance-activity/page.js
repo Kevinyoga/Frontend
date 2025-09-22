@@ -66,7 +66,7 @@ export default function HomePage() {
                     </tr>
                     <tr className="border-b">
                         <td className="font-medium px-3 py-2">
-                        Activity Titile
+                        Activity Title
                         </td>
                         <td className="px-3 py-2">
                         Judul atau deskripsi singkat aktivitas yang dilakukan
