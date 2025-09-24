@@ -58,6 +58,10 @@ export default function Sidebar() {
         { name: "Activity Report", href: "/shift-attendance/activity-report" },
         { name: "Shift Report", href: "/shift-attendance/shift-report" },
         { name: "Attendance Summary", href: "/shift-attendance/attendance-summary" },
+        { name: "Data Checkpoint", href: "/shift-attendance/data-checkpoint" },
+        { name: "Add Checkpoint", href: "/shift-attendance/add-checkpoint" },
+        { name: "Checkpoint Record", href: "/shift-attendance/checkpoint-record" },
+        { name: "Add Checkpoint Record", href: "/shift-attendance/add-record" },
       ],
     },
     {

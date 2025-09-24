@@ -13,14 +13,14 @@ export default function HomePage() {
       <main className="judul flex-1 p-6 md:p-10">
         {/* Judul */}
         <h1 className="text-2xl md:text-3xl font-bold text-blue-800 mb-6">
-          Shift Report
+          Attendance Summary
         </h1>
 
         {/* Gambar Preview */}
         <div className="flex gap-6 mb-10">
             <img
-            src="/preview27.png"
-            alt="Preview Login 27"
+            src="/preview28.png"
+            alt="Preview Login 28"
             className="preview-image1 rounded shadow-md"
             />
         </div>
