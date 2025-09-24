@@ -62,6 +62,8 @@ export default function Sidebar() {
         { name: "Add Checkpoint", href: "/shift-attendance/add-checkpoint" },
         { name: "Checkpoint Record", href: "/shift-attendance/checkpoint-record" },
         { name: "Add Checkpoint Record", href: "/shift-attendance/add-record" },
+        { name: "Checkpoint Assignment", href: "/shift-attendance/checkpoint-assignment" },
+        { name: "Shift Type", href: "/shift-attendance/shift-type" },
       ],
     },
     {

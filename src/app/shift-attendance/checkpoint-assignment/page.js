@@ -1,5 +1,5 @@
-import AddRecord from "@/app/component/add-record/page";
 import Sidebar from "../../component/Sidebar";
+import CheckpointAssignment from "@/app/component/checkpoint-assignment/page";
 
 export default function HomePage() {
   return (
@@ -19,8 +19,8 @@ export default function HomePage() {
         {/* Gambar Preview */}
         <div className="flex gap-6 mb-10">
             <img
-            src="/preview32.png"
-            alt="Preview Login 32"
+            src="/preview33.png"
+            alt="Preview Login 33"
             className="preview-image1 rounded shadow-md"
             />
         </div>
@@ -29,70 +29,105 @@ export default function HomePage() {
         <div className="indicator">
             <span id="tujuan" className="font-semibold">Tujuan Halaman</span>
             <div className="ml-6 mt-1 space-y-1">
-            <p>Halaman ini digunakanuntuk mencatat titik checkpoint yang dilakukan oleh seseorang karyawan,termasuk informasi waktu, lokasi, dan catatan tambahan</p>
+            <p>Halaman ini digunakan untuk menugaskan checkpoint ke karyawan yang di pilih berdasarkan filter yang tersedia. Checkpoint assignment memungkinkan sistem mengetahui siapa yang bertanggung jawab melakukan pengecekan di lokasi tertentu.</p>
             </div>
         </div>
 
         <div className="tabel">
-            <span className="font-semibold">Scan Record Details</span>
+            <span className="font-semibold">Select Employee</span>
             <div className="ml-6 mt-2 overflow-x-auto">
-                <p>Berisi form input yang harus diisi secara lengkap untuk membuat data checkpoint baru</p>
-                <table id="tabel" className="min-w-15 border border-gray-300 text-sm">
+                <p>form ini menyediakan beberapa fitur untuk membantu mempermudah pencarian karyawan yang akan diberikan tugas checkpoint</p>
+                <table id="tabel1" className="min-w-15 border border-gray-300 text-sm">
                     <tbody>
                     <tr className="border-b">
                         <td className="font-medium px-3 py-2">
-                        Employee Name (Required)
+                        Select Department
                         </td>
                         <td className="px-3 py-2">
-                        Pilih nama karyawan dari daftar dropdown. pastikan nama sesuai dengan data karyawan yang terdaftar.
+                        Filter berdasarkan Departemen misal: IT, Finance, Marketing, dsb.
                         </td>
                     </tr>
                     <tr className="border-b">
                         <td className="font-medium px-3 py-2">
-                        Attendance Time (Required)
+                        Select Company
                         </td>
                         <td className="px-3 py-2">
-                        Waktu saat checkpoint dilakukan. Biasanya otomatis terisi saat ini, tetapi bisa disesuaikan. Format <span className="text-green-600">DD/MM/YYYY HH:MM:SS</span>.
+                        Filter berdasarkan perusahaan jika terdapat lebih dari satu entitas (misalnya anak perusahaan).
                         </td>
                     </tr>
                     <tr className="border-b">
                         <td className="font-medium px-3 py-2">
-                        Checkpoint (Required)
+                        Select Designation
                         </td>
                         <td className="px-3 py-2">
-                        pilih checkpoint dari dropdown yang telah terdaftar sebelumnya (misalnya dari halaman "Create Checkpoint")
+                        Filter berdasarkan jabatan (misal: Software Developer, Manager, dsb).
                         </td>
                     </tr>
                     <tr className="border-b">
                         <td className="font-medium px-3 py-2">
-                        Address
+                        Search (Keyword)
                         </td>
                         <td className="px-3 py-2">
-                        Alamat Lokasi checkpoint secara deskriptif (misal "JL. Soekarno-Hatta No.1, Bandung")
+                        Cari nama karyawan secara manual berdasarkan nama atau kata kunci lainnya.
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div className="tabel">
+            <span className="font-semibold">Tabel Daftar Karyawan</span>
+            <div className="ml-6 mt-2 overflow-x-auto">
+                <p>Menampilkan daftar karyawan yang bisa ditugaskan checkpoint</p>
+                <table id="tabel2" className="min-w-15 border border-gray-300 text-sm">
+                    <tbody>
+                    <tr className="border-b">
+                        <td className="font-medium px-3 py-2">
+                        Checkbox
+                        </td>
+                        <td className="px-3 py-2">
+                        Centang untuk memilih karyawan yang akan diberi tugas checkpoint. Bisa pilih lebih dari satu. 
                         </td>
                     </tr>
                     <tr className="border-b">
                         <td className="font-medium px-3 py-2">
-                        Latitude (Required)
+                        No.
                         </td>
                         <td className="px-3 py-2">
-                        Koordinat lintang lokasi checkpoint. Biasanya otomatis terisis dari lokasi di peta.
+                        Nomor urut tampilan karyawan.
                         </td>
                     </tr>
                     <tr className="border-b">
                         <td className="font-medium px-3 py-2">
-                        Longitude (Required)
+                        Employee Name
                         </td>
                         <td className="px-3 py-2">
-                        Koordinat bujur lokasi checkpoint. Biasanya otomatis terisis dari lokasi di peta.
+                        Nama lengkap karyawan
                         </td>
                     </tr>
                     <tr className="border-b">
                         <td className="font-medium px-3 py-2">
-                        Remarks
+                        Grade
                         </td>
                         <td className="px-3 py-2">
-                        Catatan tambahan jika ada, misalnya kondisi likasi, alasan keterlambatan, atau kendala lapangan
+                        Tingkatan atau level jabatan. (saat ini ditandai "N/A").
+                        </td>
+                    </tr>
+                    <tr className="border-b">
+                        <td className="font-medium px-3 py-2">
+                        Designation
+                        </td>
+                        <td className="px-3 py-2">
+                        Jabatan karyawan, seperti Software Seveloper, IT Manager, dsb.
+                        </td>
+                    </tr>
+                    <tr className="border-b">
+                        <td className="font-medium px-3 py-2">
+                        Departemen
+                        </td>
+                        <td className="px-3 py-2">
+                        Departemen tempat kerja karyawan.
                         </td>
                     </tr>
                     </tbody>
@@ -101,7 +136,7 @@ export default function HomePage() {
         </div>
       </main>
       <aside className="h-screen sticky top-0">
-        <AddRecord />
+        <CheckpointAssignment />
       </aside>
     </div>
   );
