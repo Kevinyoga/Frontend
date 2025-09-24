@@ -1,6 +1,5 @@
 import ShiftAttendance from "@/app/component/attendance-summary/page";
 import Sidebar from "../../component/Sidebar";
-import ShiftReport from "@/app/component/shift-report/page";
 
 export default function HomePage() {
   return (
