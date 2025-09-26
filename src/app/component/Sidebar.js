@@ -64,19 +64,24 @@ export default function Sidebar() {
         { name: "Add Checkpoint Record", href: "/shift-attendance/add-record" },
         { name: "Checkpoint Assignment", href: "/shift-attendance/checkpoint-assignment" },
         { name: "Shift Type", href: "/shift-attendance/shift-type" },
+        { name: "Add Shift Type", href: "/shift-attendance/add-shift-type" },
+        { name: "Shift Assignment", href: "/shift-attendance/shift-assignment" },
+        { name: "Add Shift Assignment", href: "/shift-attendance/add-shift-assignment" },
+        { name: "Add Shift Assignment Bulk", href: "/shift-attendance/bulk-assignment" },
+        { name: "Shift Assignment Schedule", href: "/shift-attendance/assignment-schedule" },
+      ],
+    },
+    {
+      name: "Leaves",
+      children: [
+        { name: "Employee Leave", href: "/leaves/employee-leaves" },
+        { name: "Leave History", href: "/leaves/history" },
       ],
     },
     {
       name: "Company",
       children: [
         { name: "Overview", href: "/hrmsdashboard/overview" },
-      ],
-    },
-    {
-      name: "Leaves",
-      children: [
-        { name: "Request Leave", href: "/leaves/request" },
-        { name: "Leave History", href: "/leaves/history" },
       ],
     },
     {
